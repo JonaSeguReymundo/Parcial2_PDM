@@ -22,14 +22,7 @@ class MainActivity : ComponentActivity() {
             Parcial2Theme {
                 val viewModel: ProductViewModel = viewModel()
 
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Scaffold {
-                        AppNavigation(viewModel)
-                    }
-                }
+                AppNavigation(viewModel)
             }
         }
     }
